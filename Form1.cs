@@ -57,7 +57,7 @@ namespace SendEmail2018
         {
             InitializeComponent();
             //Рядок підключення до БД
-            connectionString = "Data Source=STP2DB;Persist Security Info=True;User ID=STP2;Password=qweQW345;Unicode=True";
+            connectionString = "Data Source=;Persist Security Info=True;User ID=;Password=;Unicode=True";
         }
 
         private void button1_Click(object sender, EventArgs e)
