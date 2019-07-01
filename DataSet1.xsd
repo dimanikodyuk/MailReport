@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="MyIBANK" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MyIBANK (Settings)" PropertyReference="ApplicationSettings.SendEmail2018.Properties.Settings.GlobalReference.Default.MyIBANK" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DOC_EXPORTTableAdapter" GeneratorDataComponentClassName="DOC_EXPORTTableAdapter" Name="DOC_EXPORT" UserDataComponentName="DOC_EXPORTTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MyIBANK (Settings)" DbObjectName="BANK.DOC_EXPORT" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT DOC_ID, DOC_XML, BANK_ID, TYPE_ID, STATUS_ID, CREATING_DATE, STATUS_CHANGE_TIME, BANK_ACCEPT_DATE, BANK_REF, BANK_BACK_DATE, BANK_BACK_REASON, BANK_BACK_REASON_AUX, BANK_SYSERR_DATE, BANK_SYSERR_MSG, DOC_DESC FROM BANK.DOC_EXPORT</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DOC_EXPORT" msprop:Generator_TableClassName="DOC_EXPORTDataTable" msprop:Generator_TableVarName="tableDOC_EXPORT" msprop:Generator_TablePropName="DOC_EXPORT" msprop:Generator_RowDeletingName="DOC_EXPORTRowDeleting" msprop:Generator_RowChangingName="DOC_EXPORTRowChanging" msprop:Generator_RowEvHandlerName="DOC_EXPORTRowChangeEventHandler" msprop:Generator_RowDeletedName="DOC_EXPORTRowDeleted" msprop:Generator_UserTableName="DOC_EXPORT" msprop:Generator_RowChangedName="DOC_EXPORTRowChanged" msprop:Generator_RowEvArgName="DOC_EXPORTRowChangeEvent" msprop:Generator_RowClassName="DOC_EXPORTRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
