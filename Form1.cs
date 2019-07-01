@@ -625,7 +625,7 @@ namespace SendEmail2018
                     }
 
                     //Відправка на електронну пошту
-                    SmtpClient Smtp = new SmtpClient("mail.oschadbank.ua", 25);
+                    SmtpClient Smtp = new SmtpClient("--", 25);
                     Smtp.Credentials = new NetworkCredential(OutLookLogin, OutLookPassword);
                     MailMessage Message = new MailMessage();
                     Message.IsBodyHtml = true;
@@ -1195,7 +1195,7 @@ namespace SendEmail2018
             }
         
             //Відправка на електронну пошту
-            SmtpClient Smtp = new SmtpClient("mail.oschadbank.ua", 25);
+            SmtpClient Smtp = new SmtpClient("--", 25);
             Smtp.Credentials = new NetworkCredential(OutLookLogin, OutLookPassword);
             MailMessage Message = new MailMessage();
             Message.IsBodyHtml = true;
